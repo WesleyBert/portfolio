@@ -1,6 +1,5 @@
 @use 'variable'
 
-
 @mixin center
     display: flex
     justify-content: center
@@ -12,3 +11,9 @@
     background: variable.$gradient
     text-decoration: none
     border-radius: 3rem
+
+@mixin gradient-border
+    content: ""
+    background: variable.$gradient
+    height: 3px
+    width: 30%

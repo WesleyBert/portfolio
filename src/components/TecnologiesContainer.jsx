@@ -15,13 +15,26 @@ const technologies = [
     {id: "js", name: "JavaScript", icon: <DiJsBadge/>},
     {id: "node", name: "Node.js", icon: <DiNodejsSmall/>},
     {id: "mysql", name: "MYSQL", icon: <DiMysql/>},
-    {id: "reacr", name: "React", icon: <DiReact/>},
+    {id: "react", name: "React", icon: <DiReact/>},
 
 
  ]
 const TecnologiesContainer = () => {
     return(
-        section
+        <section className='technologies-container'>
+            <h2>Tecnologias</h2>
+            <div className="technologies-grid">
+                {technologies.map((tech) =>(
+                    <div className='technology-card' id={tech.id} key={tech.id}>
+                        {tech.icon}
+                        <div className="technology-info">
+                            <h3>{tech.name}</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
     )
 }
 export default TecnologiesContainer;

@@ -5,10 +5,11 @@
     @include mixins.center
     flex-direction: column
     background-color: variable.$bg-color-secondary
-    padding: 2rem
+    padding: 3rem
     text-align: left
     width: 80%
     border-radius: variable.$card-border-radius
+    margin: 1rem
 
 .info-card
     @include mixins.center
@@ -27,13 +28,25 @@
     p
         color: variable.$text-color
         font-weight: bold
-        
 
     svg
 
-        background-color: variable.$bg-color
-        padding: .10rem
+        background-color: variable.$bg-color-secondary !important
+        padding: .20rem
         width: 2rem
-        height: 2rem
+        height: 5rem
         border-radius: variable.$card-border-radius
         
+        svg:hover 
+             color: #fff
+             background-color: green
+        
+
+    #phone-icon
+        color: #e93b81
+
+    #pin-icon
+        color: #6ab5b9
+
+    #email-icon
+        color: #c17ceb

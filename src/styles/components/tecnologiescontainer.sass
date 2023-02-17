@@ -8,42 +8,48 @@
         display: flex
         flex-wrap: wrap
         gap: 1.5rem
-
+        :hover
+            background: #858580
 
     .technology-card
         @include mixins.center
         gap: 1rem
         padding: 1rem
         border: 1px solid #333
-        width: 45%
+        width: 30%
         border-radius: variable.$card-border-radius
+        display: flex
+        flex-direction: column
+
 
         h3
             color: variable.$text-color
             margin-bottom: 1 rem
 
-        svg 
-            font-size: 12rem
+        svg
+            font-size: 7rem
+
+        
 
     #html
         svg
-            color:#E44D26
-    
+            color: #E44D26
+
     #css
         svg
-            color:#254BDD
+            color: #254BDD
 
     #js
         svg
-            color:#EFD81D
+            color: #EFD81D
 
     #node
         svg
-            color:#7CB73F
+            color: #7CB73F
 
     #react
         svg
-            color:#5ED3F3
+            color: #5ED3F3
     #mysql
         svg
-            color:#1D4A65
+            color: #1D4A65
